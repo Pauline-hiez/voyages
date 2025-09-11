@@ -109,6 +109,7 @@ html, body {
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
+    opacity: 0.6;
 }
 
 
