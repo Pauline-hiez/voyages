@@ -89,13 +89,8 @@
     flex-direction: row;
 }
 
-.drapeau {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 20px;
-}
+
+
 
 html, body {
     height: 100%;
@@ -109,7 +104,6 @@ html, body {
     background-repeat: no-repeat;
     position: relative;
     height: 100vh;
-    opacity: 0.6;
 }
 
 
