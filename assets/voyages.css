@@ -1,0 +1,120 @@
+* {
+    Margin: 0;
+    Padding: 0;
+    Box-sizing: border-box;
+}
+
+.header {
+    background: linear-gradient(to top, #2887ed, #022346);
+}
+
+.avion-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.avion {
+    position: absolute;
+    width: 200px;
+    top: 70px;
+    z-index: 2;
+    animation: avion 8s linear infinite;
+}
+
+.texte {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    top: 70px;
+    white-space: nowrap;
+    z-index: 1;
+    animation: textmove 8s linear infinite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes avion {
+    0% {
+        left: -200px;
+        opacity: 1;
+    }
+
+    80% {
+        left: 110%;
+        opacity: 1;
+    }
+
+    81% {
+        left: 110%;
+        opacity: 0;
+    }
+
+    99% {
+        left: -200px;
+        opacity: 0;
+    }
+
+    100% {
+        left: -200px;
+        opacity: 1;
+    }
+}
+
+
+@keyframes textmove {
+    0% {
+        left: -200px;
+        opacity: 1;
+    }
+
+    80% {
+        left: 110%;
+        opacity: 1;
+    }
+
+    81% {
+        left: 110%;
+        opacity: 0;
+    }
+
+    99% {
+        left: -200px;
+        opacity: 0;
+    }
+
+    100% {
+        left: -200px;
+        opacity: 1;
+    }
+}
+
+.drapeau {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.footer {
+    background: linear-gradient(to top, #2887ed, #022346); 
+}
+
+.reseaux {
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+}
+
+.reseaux img {
+    width: 50px;
+    margin-top: 20px;
+}
+
+.liens-footer {
+    display: flex;
+    justify-content: right;
+}
+
