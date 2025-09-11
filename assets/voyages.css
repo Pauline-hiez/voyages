@@ -89,7 +89,10 @@
     flex-direction: row;
 }
 
-
+.drapeau1 {
+    margin-top: 80px;
+    margin-left: 300px;
+}
 
 
 html, body {
