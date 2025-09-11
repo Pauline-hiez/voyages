@@ -96,11 +96,8 @@
     justify-content: space-between;
     margin-left: 20px;
     margin-right: 20px;
-    border-radius: 20px;
+    border-radius: 10px;
 }
-
-
-
 
 .footer {
     background: linear-gradient(to bottom, #2887ed, #022346); 
