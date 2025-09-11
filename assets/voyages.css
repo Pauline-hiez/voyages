@@ -2,10 +2,12 @@
     Margin: 0;
     Padding: 0;
     Box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .header {
     background: linear-gradient(to top, #2887ed, #022346);
+    height: 200px;
 }
 
 .avion-container {
@@ -15,26 +17,17 @@
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .avion {
     position: absolute;
-    width: 200px;
-    top: 70px;
+    width: 700px;
     z-index: 2;
     animation: avion 8s linear infinite;
 }
 
-.texte {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    top: 70px;
-    white-space: nowrap;
-    z-index: 1;
-    animation: textmove 8s linear infinite;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
 
 @keyframes avion {
     0% {
@@ -91,6 +84,11 @@
     }
 }
 
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
 .drapeau {
     display: flex;
     justify-content: space-between;
@@ -99,6 +97,19 @@
     border-radius: 20px;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.fond {
+    background-image: url(image/accueil/plan.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
 
 
 
