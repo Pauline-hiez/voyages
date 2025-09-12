@@ -48,11 +48,6 @@ nav a:hover {
     font-size: 15pt;
 }
 
-/* .fond {
-    background-image: url(image/caledonie/fond.jpg);
-    background-size: cover;
-    height: 100vh;
-} */
 
 h2 {
     text-align: center;
@@ -62,6 +57,22 @@ h2 {
     font-size: 50px;
 }
 
+.fil {
+    border: none;
+    height: 4px;
+    background: linear-gradient(270deg, #50a1df, #ff6f61, #ffd700, #50a1df);
+    background-size: 600% 600%;
+    animation: gradientMove 3s ease infinite;
+    border-radius: 2px;
+    margin: 40px;
+}
+
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
 
 .carrousel {
     height: 500px;
@@ -69,6 +80,7 @@ h2 {
     position: relative;
     margin-left: 20px;
     border-radius: 20px;
+    filter: drop-shadow(0 0 0.8rem rgb(77, 57, 61));
 }
 
 .cadre {
@@ -328,6 +340,17 @@ p {
     font-size: 1rem;
     background-color: rgba(240, 248, 255, 0.305);
     border-radius: 10px;
+}
+
+.btn {
+    background-color: rgb(4, 59, 72);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .footer {
