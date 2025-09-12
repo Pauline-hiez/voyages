@@ -6,9 +6,14 @@
 }
 
 .header {
-    background: linear-gradient(to top, #2887ed, #022346);
+    background-image: url(image/accueil/ciel1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 200px;
+    margin: 0;
 }
+
+
 
 .avion-container {
     position: relative;
@@ -84,14 +89,61 @@
     }
 }
 
-.navbar {
+nav {
+    background: #72bcec9f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.226); 
     display: flex;
-    flex-direction: row;
+    padding: 0 20px;  
+}
+
+nav a {
+    color: rgb(30, 30, 115);
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+}
+
+.liens-nav {
+    display: flex;
+    text-align: center;
+    margin-left: 600px;
+}
+
+nav a:hover {
+    color: #e3ecf3;
+    text-decoration: underline;
+}
+
+.drapeau img {
+    width: 400px;
+}
+
+.drapeau > div {
+    width: 400px;
 }
 
 .drapeau1 {
-    margin-top: 80px;
-    margin-left: 300px;
+     margin-left: 560px;
+     margin-top: 180px;
+     filter: drop-shadow(0 0 0.8rem rgb(77, 57, 61));
+}
+
+.drapeau2 {
+    margin-top: -500px;
+    margin-left: 800px;
+    filter: drop-shadow(0 0 0.75rem rgb(77, 57, 61));
+}
+
+.drapeau3 {
+    margin-top: -430px;
+    margin-left: 200px;
+}
+
+.drapeau4 {
+    margin-left: 500px;
+    margin-top: 100px;
+    filter: drop-shadow(0 0 0.75rem rgb(77, 57, 61));
 }
 
 
@@ -112,7 +164,7 @@ html, body {
 
 
 .footer {
-    background: linear-gradient(to bottom, #2887ed, #022346); 
+    background-image: url(image/accueil/ciel1.jpg); 
 }
 
 .reseaux {
