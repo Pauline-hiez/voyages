@@ -1,0 +1,492 @@
+diff --git a/assets/image/accueil/avion-texte.png b/assets/image/accueil/avion-texte.png
+new file mode 100644
+index 0000000..13a9b4d
+Binary files /dev/null and b/assets/image/accueil/avion-texte.png differ
+diff --git a/assets/image/accueil/carte-monde.jpg b/assets/image/accueil/carte-monde.jpg
+deleted file mode 100644
+index d649b1a..0000000
+Binary files a/assets/image/accueil/carte-monde.jpg and /dev/null differ
+diff --git a/assets/image/accueil/ciel.jpg b/assets/image/accueil/ciel.jpg
+new file mode 100644
+index 0000000..64b9caf
+Binary files /dev/null and b/assets/image/accueil/ciel.jpg differ
+diff --git a/assets/image/accueil/ciel1.jpg b/assets/image/accueil/ciel1.jpg
+new file mode 100644
+index 0000000..a7bb530
+Binary files /dev/null and b/assets/image/accueil/ciel1.jpg differ
+diff --git a/assets/image/accueil/drapeau-caledonie.png b/assets/image/accueil/drapeau-caledonie.png
+index f8a6f50..df32457 100644
+Binary files a/assets/image/accueil/drapeau-caledonie.png and b/assets/image/accueil/drapeau-caledonie.png differ
+diff --git a/assets/image/accueil/drapeau-canada.png b/assets/image/accueil/drapeau-canada.png
+deleted file mode 100644
+index 30a2d55..0000000
+Binary files a/assets/image/accueil/drapeau-canada.png and /dev/null differ
+diff --git a/assets/image/accueil/drapeau-canada.webp b/assets/image/accueil/drapeau-canada.webp
+new file mode 100644
+index 0000000..3c7e905
+Binary files /dev/null and b/assets/image/accueil/drapeau-canada.webp differ
+diff --git a/assets/image/accueil/drapeau-italie.png b/assets/image/accueil/drapeau-italie.png
+index 8da5034..52e1504 100644
+Binary files a/assets/image/accueil/drapeau-italie.png and b/assets/image/accueil/drapeau-italie.png differ
+diff --git a/assets/image/accueil/drapeau-tunisie.jpg b/assets/image/accueil/drapeau-tunisie.jpg
+deleted file mode 100644
+index e586f4f..0000000
+Binary files a/assets/image/accueil/drapeau-tunisie.jpg and /dev/null differ
+diff --git a/assets/image/accueil/drapeau-tunisie.png b/assets/image/accueil/drapeau-tunisie.png
+new file mode 100644
+index 0000000..a80be0c
+Binary files /dev/null and b/assets/image/accueil/drapeau-tunisie.png differ
+diff --git a/assets/image/accueil/plan.jpg b/assets/image/accueil/plan.jpg
+new file mode 100644
+index 0000000..509fc21
+Binary files /dev/null and b/assets/image/accueil/plan.jpg differ
+diff --git a/assets/image/canada/readme.md b/assets/image/canada/readme.md
+new file mode 100644
+index 0000000..c97200f
+--- /dev/null
++++ b/assets/image/canada/readme.md
+@@ -0,0 +1 @@
++# dossier canada
+diff --git a/assets/image/italie/readme.md b/assets/image/italie/readme.md
+new file mode 100644
+index 0000000..25135c8
+--- /dev/null
++++ b/assets/image/italie/readme.md
+@@ -0,0 +1 @@
++# dossier italie
+diff --git a/assets/image/tunisie/readme.md b/assets/image/tunisie/readme.md
+new file mode 100644
+index 0000000..a6dac9f
+--- /dev/null
++++ b/assets/image/tunisie/readme.md
+@@ -0,0 +1 @@
++# dossier tunisie
+diff --git a/assets/voyages.css b/assets/voyages.css
+index b6ddf09..30434da 100644
+--- a/assets/voyages.css
++++ b/assets/voyages.css
+@@ -2,10 +2,15 @@
+     Margin: 0;
+     Padding: 0;
+     Box-sizing: border-box;
++    overflow-x: hidden;
+ }
+ 
+ .header {
+-    background: linear-gradient(to top, #2887ed, #022346);
++    background-image: url(image/accueil/ciel1.jpg);
++    background-size: cover;
++    background-repeat: no-repeat;
++    height: 200px;
++    margin: 0;
+ }
+ 
+ .avion-container {
+@@ -13,29 +18,20 @@
+     width: 100%;
+     height: 100px;
+     display: flex;
++    justify-items: center;
+     flex-direction: row;
+     overflow-x: hidden;
++    overflow-y: hidden;
++    filter: drop-shadow(0 8mm 4mm rgb(3, 33, 55));
+ }
+ 
+ .avion {
+     position: absolute;
+-    width: 200px;
+-    top: 70px;
++    width: 700px;
+     z-index: 2;
+     animation: avion 8s linear infinite;
+ }
+ 
+-.texte {
+-    position: absolute;
+-    font-size: 24px;
+-    font-weight: bold;
+-    top: 70px;
+-    white-space: nowrap;
+-    z-index: 1;
+-    animation: textmove 8s linear infinite;
+-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+-}
+-
+ @keyframes avion {
+     0% {
+         left: -200px;
+@@ -63,7 +59,6 @@
+     }
+ }
+ 
+-
+ @keyframes textmove {
+     0% {
+         left: -200px;
+@@ -91,17 +86,82 @@
+     }
+ }
+ 
+-.drapeau {
++nav {
++    background: #72bbec4d;
++    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.226);
++    display: flex;
++    padding: 10px 20px;
++    height: 75px;
++}
++
++nav a {
++    color: rgb(30, 30, 115);
++    padding: 15px 25px;
++    text-decoration: none;
++    font-weight: bold;
++    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
++}
++
++.liens-nav {
+     display: flex;
+-    justify-content: space-between;
+-    margin-left: 20px;
+-    margin-right: 20px;
+-    border-radius: 20px;
++    text-align: center;
++    margin-left: 440px;
+ }
+ 
++nav a:hover {
++    color: #50a1df;
++    font-size: 15pt;
++}
++
++.drapeau img {
++    width: 400px;
++}
++
++.drapeau>div {
++    width: 400px;
++}
++
++.drapeau1 {
++    margin-left: 560px;
++    margin-top: 180px;
++    filter: drop-shadow(0 0 0.8rem rgb(77, 57, 61));
++}
++
++.drapeau2 {
++    margin-top: -500px;
++    margin-left: 800px;
++    filter: drop-shadow(0 0 0.75rem rgb(77, 57, 61));
++}
++
++.drapeau3 {
++    margin-top: -430px;
++    margin-left: 200px;
++}
++
++.drapeau4 {
++    margin-left: 500px;
++    margin-top: 100px;
++    filter: drop-shadow(0 0 0.75rem rgb(77, 57, 61));
++}
++
++
++html,
++body {
++    height: 100%;
++    margin: 0;
++}
++
++.fond {
++    background-image: url(image/accueil/plan.jpg);
++    background-size: cover;
++    background-position: center;
++    background-repeat: no-repeat;
++    position: relative;
++    height: 100vh;
++}
+ 
+ .footer {
+-    background: linear-gradient(to bottom, #2887ed, #022346); 
++    background-image: url(image/accueil/ciel1.jpg);
+ }
+ 
+ .reseaux {
+@@ -116,11 +176,31 @@
+     margin-top: 20px;
+ }
+ 
++.footer {
++    color: rgb(30, 30, 115);
++    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
++    padding: 20px;
++    height: 320px;
++}
++
+ .liens-footer {
+     display: flex;
+     justify-content: right;
+     align-items: center;
+-    margin-bottom: 30px;padding-right: 40px;
+     font-size: 15px;
++    line-height: 32px;
++}
++
++.footer a {
++    color: rgb(30, 30, 115);
++    display: flex;
++    text-decoration: none;
++}
++
++.footer a:hover {
++    color: #50a1df;
++    font-size: 10pt;
++    text-decoration: none;
++    font-weight: bold;
+ }
+ 
+diff --git a/index.html b/index.html
+new file mode 100644
+index 0000000..2fcd7a5
+--- /dev/null
++++ b/index.html
+@@ -0,0 +1,101 @@
++<!DOCTYPE html>
++<html lang="fr">
++
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Accueil</title>
++    <link rel="stylesheet" href="assets/voyages.css">
++</head>
++
++<body>
++
++    <header class="header">
++
++        <div class="avion-container">
++
++            <img src="assets/image/accueil/avion-texte.png" class="avion" alt="avion">
++
++
++        </div>
++
++    </header>
++
++    <nav><ul class="liens-nav">
++            <a href="index.html"><li>Accueil</li></a>
++            <a href="italie.html"><li>L'Italie</li></a>
++            <a href="canada.html"><li>Le Canada</li></a>
++            <a href="caledonie.html"><li>La Nouvelle-Calédonie</li></a>
++            <a href="tunisie.html"><li>La Tunisie</li></a>
++
++        </ul></nav>
++
++    <section class="fond">
++
++        
++
++        <div class="drapeau">
++
++            <div class="drapeau1">
++
++            <a href="canada.html"><img src="assets/image/accueil/drapeau-canada.webp" alt="drapeau-canada"></a>
++
++            </div>
++
++            <div class="drapeau2">
++
++            <a href="italie.html"><img src="assets/image/accueil/drapeau-italie.png" alt="drapeau-italie"></a>
++
++            </div>
++
++            <div class="drapeau3">
++
++            <a href="tunisie.html"><img src="assets/image/accueil/drapeau-tunisie.png" alt="drapeau-tunisie"></a>
++
++            </div>
++
++            <div class="drapeau4">
++
++            <a href="caledonie.html"><img src="assets/image/accueil/drapeau-caledonie.png" alt="drapeau-caledonie"></a>
++
++            </div>
++
++        <!-- </div> -->
++
++    </section>
++
++    <footer class="footer">
++
++        <div class="reseaux">
++
++            <p>Retrouvez-nous sur les réseaux sociaux :</p>
++
++
++
++            <img src="assets/icones/facebook.png" alt="facebook">
++            <img src="assets/icones/Instagram.png" alt="instagram">
++            <img src="assets/icones/twitter.png" alt="twitter">
++
++            <div></div>
++
++        </div>
++
++        <div class="liens-footer">
++
++            <ul>
++
++                <li><a href="">Le Canada</a></li>
++                <li><a href="">L'Italie</a></li>
++                <li><a href="">La Tunisie</a></li>
++                <li><a href="">La Nouvelle-Calédonie</a></li>
++
++            </ul>
++
++        </div>
++
++    </footer>
++
++</body>
++
++</html>
++
+diff --git a/italie.html b/italie.html
+index 6c4bd93..cfb895c 100644
+--- a/italie.html
++++ b/italie.html
+@@ -24,9 +24,9 @@
+ 
+     </nav>
+ 
+-
+-    </section>
+     <main>
++        </section>
++
+         <p>
+             Entre ses paysages magnifiques, son patrimoine historique incomparable, sa cuisine mondialement connue et
+             son art de vivre unique, l’Italie séduit tous ceux qui la visitent.
+@@ -58,8 +58,8 @@
+             <img src="./assets/image/Italie/Colosseo_2020.jpg.webp" alt="Colisée à Rome">
+             <img src="./assets/image/Italie/pizza-napolitaine.jpg" alt="Pizza Margherita napolitaine">
+         </div>
+-
+     </main>
++
+     <br>
+ 
+ 
+@@ -72,10 +72,11 @@
+         </div>
+         <h2 style="text-align: center;"> Les spécialité culinaire </h2>
+ 
+-        <p> L’Italie est mondialement célèbre pour sa cuisine riche, variée et savoureuse. Chaque région italienne a ses
++        <p> L’Italie est mondialement célèbre pour sa cuisine riche, variée et savoureuse. Chaque région italienne a
++            ses
+             propres spécialités, mais voici un aperçu des grandes spécialités culinaires italiennes les plus
+             emblématiques, classées par catégories :</p>
+-    
++
+         <hr>
+         <h2> 🥗 Entrées </h2>
+         <ul>
+@@ -277,7 +278,7 @@
+             <img src="./assets/image/Italie/naple1.jpg" alt="Naples 1">
+             <img src="./assets/image/Italie/naple2.jpg" alt="Naples 2">
+             <img src="./assets/image/Italie/naple3.jpg" alt="Naples 3">
+-        </div>  
++        </div>
+         <br>
+         <hr>
+         <h2> Turin – La Ville Industrielle et Culturelle </h2>
+@@ -333,42 +334,56 @@
+             <img src="./assets/image/Italie/verone3.jpg" alt="Vérone 3">
+         </div>
+         <br>
+-        
+-    </section>
+-<br>
+ 
+-<section>   
+-    <h2 style="text-align: center;"> 🇮🇹 Clichés sur les Italiens</h2>
+-    <p> Comme pour toute culture, il existe des stéréotypes et des clichés associés aux Italiens. Voici quelques-uns
+-        des clichés les plus courants, bien que, bien sûr, ils ne s’appliquent pas à tous les individus :</p>
++    </section>
+     <br>
+-    <hr> 
+-    <h2> Les clichés les plus courants </h2>
+-    <p>  <strong> 🤌 Les Italiens sont très expressifs : </strong> Ils utilisent beaucoup de gestes et d’expressions faciales
+-        pour communiquer.</p>
++
++    <section>
++        <h2 style="text-align: center;"> 🇮🇹 Clichés sur les Italiens</h2>
++        <p> Comme pour toute culture, il existe des stéréotypes et des clichés associés aux Italiens. Voici
++            quelques-uns
++            des clichés les plus courants, bien que, bien sûr, ils ne s’appliquent pas à tous les individus :</p>
+         <br>
+-    <p> <strong> 👨‍👩‍👧‍👦 La famille est au centre de la vie italienne : </strong> Les Italiens sont très attachés à leur famille et passent beaucoup
+-        de temps ensemble.</p> 
++        <hr>
++        <h2> Les clichés les plus courants </h2>
++        <p> <strong> 🤌 Les Italiens sont très expressifs : </strong> Ils utilisent beaucoup de gestes et
++            d’expressions
++            faciales
++            pour communiquer.</p>
++        <br>
++        <p> <strong> 👨‍👩‍👧‍👦 La famille est au centre de la vie italienne : </strong> Les Italiens sont très
++            attachés à leur famille et passent beaucoup
++            de temps ensemble.</p>
++        <br>
++        <p> <strong> 🍝 Les Italiens sont passionnés par la nourriture : </strong> La cuisine est une partie
++            essentielle
++            de la culture italienne, et les Italiiens prennent leur nourriture très au sérieux.</p>
++        <br>
++        <p> <strong> 🇮🇹 Les Italiens sont fiers de leur patrimoine culturel : </strong> Ils ont une riche histoire
++            et
++            sont très fiers de leurs contributions à l’art, à la musique et à la littérature.</p>
++        <br>
++        <p> <strong> 🕺 Les Italiens aiment la dolce vita :</strong> « La douce vie » en italien est un concept qui
++            évoque une existence empreinte d'aisance, de plaisir et de beauté
++            quotidienne.</p>
++        <br>
++        <p> <strong> 💘 Les Italiens sont souvent perçus comme étant romantiques : </strong> L’Italie est souvent
++            associée à l’amour et au romantisme, en partie grâce à des villes comme Venise et Rome.</p>
++        <br>
++        <p> <strong> 👗 Les Italiens sont réputés pour leur sens de la mode : </strong> Milan est l’une des
++            capitales
++            mondiales de la mode, et les Italiiens sont souvent considérés comme ayant un excellent sens du style.
++        </p>
+         <br>
+-    <p> <strong> 🍝  Les Italiens sont passionnés par la nourriture : </strong> La cuisine est une partie essentielle de la culture italienne, et les Italiiens prennent leur nourriture très au sérieux.</p>
+-    <br>
+-    <p> <strong> 🇮🇹 Les Italiens sont fiers de leur patrimoine culturel : </strong> Ils ont une riche histoire et sont très fiers de leurs contributions à l’art, à la musique et à la littérature.</p>    
+-    <br>
+-    <p>  <strong> 🕺 Les Italiens aiment la dolce vita :</strong> « La douce vie » en italien est un concept qui évoque une existence empreinte d'aisance, de plaisir et de beauté
+-        quotidienne.</p>
+-    <br>
+-    <p> <strong> 💘 Les Italiens sont souvent perçus comme étant romantiques : </strong> L’Italie est souvent associée à l’amour et au romantisme, en partie grâce à des villes comme Venise et Rome.</p>
+-    <br>
+-    <p> <strong> 👗 Les Italiens sont réputés pour leur sens de la mode : </strong> Milan est l’une des capitales mondiales de la mode, et les Italiiens sont souvent considérés comme ayant un excellent sens du style.</p>
+-    <br>
+-    <p> <strong> 📣 Les Italiens sont parfois perçus comme étant bruyants : </strong> En raison de leur expressivité, les Italiens peuvent être perçus comme étant plus bruyants que d’autres cultures.</p>
+-    
+-    
++        <p> <strong> 📣 Les Italiens sont parfois perçus comme étant bruyants : </strong> En raison de leur
++            expressivité, les Italiens peuvent être perçus comme étant plus bruyants que d’autres cultures.</p>
+ 
+-    </ul>
+-    <br>
+-    <hr>
+-</section>
++
++
++        </ul>
++        <br>
++        <hr>
++    </section>
+ 
+     <footer>
+         <p>© 2025 - Requiescat in pace | Tout droit réservé |</p>
