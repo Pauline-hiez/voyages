@@ -48,13 +48,22 @@ nav a:hover {
     font-size: 15pt;
 }
 
+.carte img {
+    width: 700px;
+    margin-left: 27%;
+    margin-top: 20px;
+}
+
 
 h2 {
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     padding: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(2, 2, 2);
     font-size: 50px;
+    height: 150px;
 }
 
 .fil {
@@ -80,7 +89,7 @@ h2 {
     position: relative;
     margin-left: 20px;
     border-radius: 20px;
-    filter: drop-shadow(0 0 0.8rem rgb(77, 57, 61));
+    
 }
 
 .cadre {
@@ -166,6 +175,7 @@ h2 {
     position: relative;
     margin-right: 20px;
     border-radius: 20px;
+    
 }
 
 .cadre2 {
@@ -246,6 +256,7 @@ h2 {
     position: relative;
     margin-left: 20px;
     border-radius: 20px;
+    
 }
 
 .cadre3 {
@@ -272,7 +283,7 @@ h2 {
 }
 
 .image11 {
-    background-image: url(image/caledonie/etoile.jpg);
+    background-image: url(image/caledonie/tortue.jpg);
     background-size: cover;
 }
 
