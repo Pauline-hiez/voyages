@@ -48,11 +48,11 @@ nav a:hover {
     font-size: 15pt;
 }
 
-.fond {
+/* .fond {
     background-image: url(image/caledonie/fond.jpg);
     background-size: cover;
     height: 100vh;
-}
+} */
 
 h2 {
     text-align: center;
@@ -292,18 +292,18 @@ h2 {
     transform: rotate(-45deg);
 }
 
-*:target~.image1 {
+*:target~.image9 {
     opacity: 0;
 }
 
-#image4:target~.image4 {
+#image9:target~.image9 {
     opacity: 1;
 }
 
-#image5:target~.image5,
-#image6:target~.image6,
-#image7:target~.image7,
-#image8:target~.image8 {
+#image9:target~.image9,
+#image10:target~.image10,
+#image11:target~.image11,
+#image12:target~.image12 {
     z-index: 2;
     opacity: 1;
 }

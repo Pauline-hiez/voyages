@@ -130,39 +130,76 @@
 
         <section class="animaux">
 
+
             <div class="carrousel3">
+                <span id="image9"></span>
+                <span id="image10"></span>
+                <span id="image11"></span>
+                <span id="image12"></span>
 
-            <span id="image9"></span>
-            <span id="image10"></span>
-            <span id="image11"></span>
-            <span id="image12"></span>
+                <div class="cadre3 image9" >
+                    <a href="#image12" class="fleche3 precedente"></a>
+                    <a href="#image10" class="fleche3 suivante"></a>
+                </div>
 
-            <div class="cadre image9" >
-                <a href="#image12" class="fleche precedente"></a>
-                <a href="#image10" class="fleche suivante"></a>
+                <div class="cadre3 image10" >
+                    <a href="#image9" class="fleche3 precedente"></a>
+                    <a href="#image11" class="fleche3 suivante"></a>
+                </div>
+
+                <div class="cadre3 image11" >
+                    <a href="#image10" class="fleche3 precedente"></a>
+                    <a href="#image12" class="fleche3 suivante"></a>
+                </div>
+
+                <div class="cadre3 image12" >
+                    <a href="#image11" class="fleche3 precedente"></a>
+                    <a href="#image9" class="fleche3 suivante"></a>
+                </div>
             </div>
 
-            <div class="cadre image10" >
-                <a href="#image9" class="fleche precedente"></a>
-                <a href="#image11" class="fleche suivante"></a>
-            </div>
-
-            <div class="cadre image11" >
-                <a href="#image10" class="fleche precedente"></a>
-                <a href="#image12" class="fleche suivante"></a>
-            </div>
-
-            <div class="cadre image12" >
-                <a href="#image11" class="fleche precedente"></a>
-                <a href="#image9" class="fleche suivante"></a>
-            </div>
-
-        </div>
-
-            <p>La culture de la Nouvelle-Calédonie est un mélange riche d'influences kanak, françaises et polynésiennes. La gastronomie locale met en avant des produits frais et des saveurs exotiques, avec des plats à base de poisson, de fruits de mer et de légumes tropicaux.</p>
+            <p>Les animaux en Nouvelle-Calédonie sont variés et uniques. On y trouve des espèces endémiques, comme le cagou, un oiseau incapable de voler, ainsi que de nombreuses espèces marines dans les récifs coralliens.</p>
 
 
         </section>
+
+        <h2>Les évènements</h2>
+
+        <div id="video-slider" style="max-width:600px;margin:auto;text-align:center;">
+                <video id="slider-video" width="100%" controls>
+                    <source src="assets/video/claquettes.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <br>
+                <button onclick="prevVideo()">Précédent</button>
+                <button onclick="nextVideo()">Suivant</button>
+            </div>
+
+            <script>
+            const videos = [
+                'assets/video/claquettes.mp4',
+                'assets/video/rodeo.mp4',
+                'assets/video/spectacle2.mp4',
+                'assets/video/spectacle3.mp4',
+                'assets/video/wallis.mp4'
+            ];
+            let current = 0;
+            function showVideo(index) {
+                const videoElement = document.getElementById('slider-video');
+                videoElement.querySelector('source').src = videos[index];
+                videoElement.load();
+            }
+            function prevVideo() {
+                current = (current - 1 + videos.length) % videos.length;
+                showVideo(current);
+            }
+            function nextVideo() {
+                current = (current + 1) % videos.length;
+                showVideo(current);
+            }
+            </script>
+
+            <p>Découvrez le lancé de claquettes et le rodéo de la foire de Bourail. Voyagez avec avec la culture polynesienne et les danse traditionnelles de Wallis et Futuna.</p>
 
 
     </main>
