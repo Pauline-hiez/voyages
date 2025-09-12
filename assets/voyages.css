@@ -2,10 +2,15 @@
     Margin: 0;
     Padding: 0;
     Box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .header {
-    background: linear-gradient(to top, #2887ed, #022346);
+    background-image: url(image/accueil/ciel1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    margin: 0;
 }
 
 .avion-container {
@@ -13,27 +18,18 @@
     width: 100%;
     height: 100px;
     display: flex;
+    justify-items: center;
     flex-direction: row;
     overflow-x: hidden;
+    overflow-y: hidden;
+    filter: drop-shadow(0 8mm 4mm rgb(3, 33, 55));
 }
 
 .avion {
     position: absolute;
-    width: 200px;
-    top: 70px;
+    width: 700px;
     z-index: 2;
     animation: avion 8s linear infinite;
-}
-
-.texte {
-    position: absolute;
-    font-size: 24px;
-    font-weight: bold;
-    top: 70px;
-    white-space: nowrap;
-    z-index: 1;
-    animation: textmove 8s linear infinite;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @keyframes avion {
@@ -63,7 +59,6 @@
     }
 }
 
-
 @keyframes textmove {
     0% {
         left: -200px;
@@ -91,17 +86,82 @@
     }
 }
 
-.drapeau {
+nav {
+    background: #72bbec4d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.226);
     display: flex;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 20px;
+    padding: 10px 20px;
+    height: 75px;
+}
+
+nav a {
+    color: rgb(30, 30, 115);
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.liens-nav {
+    display: flex;
+    text-align: center;
+    margin-left: 440px;
+}
+
+nav a:hover {
+    color: #50a1df;
+    font-size: 15pt;
+}
+
+.drapeau img {
+    width: 400px;
+}
+
+.drapeau>div {
+    width: 400px;
+}
+
+.drapeau1 {
+    margin-left: 560px;
+    margin-top: 180px;
+    filter: drop-shadow(0 0 0.8rem rgb(77, 57, 61));
+}
+
+.drapeau2 {
+    margin-top: -500px;
+    margin-left: 800px;
+    filter: drop-shadow(0 0 0.75rem rgb(77, 57, 61));
+}
+
+.drapeau3 {
+    margin-top: -430px;
+    margin-left: 200px;
+}
+
+.drapeau4 {
+    margin-left: 500px;
+    margin-top: 100px;
+    filter: drop-shadow(0 0 0.75rem rgb(77, 57, 61));
 }
 
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.fond {
+    background-image: url(image/accueil/plan.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+}
+
 .footer {
-    background: linear-gradient(to bottom, #2887ed, #022346); 
+    background-image: url(image/accueil/ciel1.jpg);
 }
 
 .reseaux {
@@ -116,11 +176,31 @@
     margin-top: 20px;
 }
 
+.footer {
+    color: rgb(30, 30, 115);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    height: 320px;
+}
+
 .liens-footer {
     display: flex;
     justify-content: right;
     align-items: center;
-    margin-bottom: 30px;padding-right: 40px;
     font-size: 15px;
+    line-height: 32px;
+}
+
+.footer a {
+    color: rgb(30, 30, 115);
+    display: flex;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #50a1df;
+    font-size: 10pt;
+    text-decoration: none;
+    font-weight: bold;
 }
 
