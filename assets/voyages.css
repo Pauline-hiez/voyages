@@ -13,16 +13,16 @@
     margin: 0;
 }
 
-
-
 .avion-container {
     position: relative;
     width: 100%;
     height: 100px;
     display: flex;
+    justify-items: center;
     flex-direction: row;
     overflow-x: hidden;
     overflow-y: hidden;
+    filter: drop-shadow(0 8mm 4mm rgb(3, 33, 55));
 }
 
 .avion {
@@ -31,8 +31,6 @@
     z-index: 2;
     animation: avion 8s linear infinite;
 }
-
-
 
 @keyframes avion {
     0% {
@@ -60,7 +58,6 @@
         opacity: 1;
     }
 }
-
 
 @keyframes textmove {
     0% {
@@ -90,10 +87,11 @@
 }
 
 nav {
-    background: #72bcec9f;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.226); 
+    background: #72bbec4d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.226);
     display: flex;
-    padding: 0 20px;  
+    padding: 10px 20px;
+    height: 75px;
 }
 
 nav a {
@@ -101,32 +99,32 @@ nav a {
     padding: 15px 25px;
     text-decoration: none;
     font-weight: bold;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .liens-nav {
     display: flex;
     text-align: center;
-    margin-left: 600px;
+    margin-left: 440px;
 }
 
 nav a:hover {
-    color: #e3ecf3;
-    text-decoration: underline;
+    color: #50a1df;
+    font-size: 15pt;
 }
 
 .drapeau img {
     width: 400px;
 }
 
-.drapeau > div {
+.drapeau>div {
     width: 400px;
 }
 
 .drapeau1 {
-     margin-left: 560px;
-     margin-top: 180px;
-     filter: drop-shadow(0 0 0.8rem rgb(77, 57, 61));
+    margin-left: 560px;
+    margin-top: 180px;
+    filter: drop-shadow(0 0 0.8rem rgb(77, 57, 61));
 }
 
 .drapeau2 {
@@ -147,7 +145,8 @@ nav a:hover {
 }
 
 
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
@@ -162,7 +161,7 @@ html, body {
 }
 
 .footer {
-    background-image: url(image/accueil/ciel1.jpg); 
+    background-image: url(image/accueil/ciel1.jpg);
 }
 
 .reseaux {
@@ -177,11 +176,31 @@ html, body {
     margin-top: 20px;
 }
 
+.footer {
+    color: rgb(30, 30, 115);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    height: 320px;
+}
+
 .liens-footer {
     display: flex;
     justify-content: right;
     align-items: center;
-    margin-bottom: 30px;padding-right: 40px;
     font-size: 15px;
+    line-height: 32px;
+}
+
+.footer a {
+    color: rgb(30, 30, 115);
+    display: flex;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #50a1df;
+    font-size: 10pt;
+    text-decoration: none;
+    font-weight: bold;
 }
 
