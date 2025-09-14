@@ -80,7 +80,7 @@ h2 {
 .fil {
     border: none;
     height: 4px;
-    background: linear-gradient(270deg, #008c89, #013a39, #8ad9d8, #008c89);
+    background: linear-gradient(270deg, #008c89, #c8f0ef, #8ad9d8, #008c89);
     background-size: 600% 600%;
     animation: gradientMove 3s ease infinite;
     border-radius: 2px;
@@ -198,22 +198,22 @@ h2 {
 .image5 {
     z-index: 2;
     opacity: 1;
-    background-image: url(image/caledonie/kava.jpg);
+    background-image: url(image/caledonie/tjibaou.jpg);
     background-size: cover;
 }
 
 .image6 {
-    background-image: url(image/caledonie/bounia.jpg);
-    background-size: cover;
-}
-
-.image7 {
     background-image: url(image/caledonie/culture.jpg);
     background-size: cover;
 }
 
+.image7 {
+    background-image: url(image/caledonie/kava.jpg);
+    background-size: cover;
+}
+
 .image8 {
-    background-image: url(image/caledonie/tazar2.jpeg);
+    background-image: url(image/caledonie/bounia.jpg);
     background-size: cover;
 }
 
@@ -414,6 +414,34 @@ h4 {
     flex-wrap: wrap;
     width: 600px;
     height: 500px;
+    border-radius: 20px;
+}
+
+.plages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.plages img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+.plages img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .partenaires {
@@ -438,10 +466,15 @@ h4 {
 }
 
 .reseaux {
-    font-size: 25px;
+    font-size: 55px;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-left: 40px;
+}
+
+.titre2 {
+    font-size: 25px;
+    margin-left: -12px;
 }
 
 .reseaux img {
