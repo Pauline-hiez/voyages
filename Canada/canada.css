@@ -39,7 +39,7 @@
     box-sizing: border-box;
 }
 main{
-    border: 10px dashed rgb(77, 163, 115);
+
     min-height: 100vh;
     display: grid;
     grid-template-columns: 400px 1fr;
@@ -60,7 +60,6 @@ h1{
    
 }
 .section2{
-    border: 5px solid red;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -81,7 +80,6 @@ article{
     flex-direction: column;
     width: 100%;
     align-items: center;
-    border: 2px solid seagreen;
     font-size: 20px;
     padding: 40px;
 }
