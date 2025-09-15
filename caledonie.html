@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle-Calédonie</title>
+    <link rel="stylesheet" href="assets/caledonie.css">
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1>Bienvenue en Nouvelle-Calédonie</h1>
+        <br>
+        <h3>Petite île du bout du monde</h3>
+
+    </header>
+
+    <main class="fond">
+
+        <nav>
+            <ul class="liens-nav">
+                <a href="index.html">
+                    <li>Accueil</li>
+                </a>
+                <a href="italie.html">
+                    <li>L'Italie</li>
+                </a>
+                <a href="canada.html">
+                    <li>Le Canada</li>
+                </a>
+                <a href="caledonie.html">
+                    <li>La Nouvelle-Calédonie</li>
+                </a>
+                <a href="tunisie.html">
+                    <li>La Tunisie</li>
+                </a>
+
+            </ul>
+        </nav>
+
+        <h2>Les pays et ses paysages</h2>
+
+        <section class="paysages">
+
+            <div class="carrousel">
+
+            <span id="image1"></span>
+            <span id="image2"></span>
+            <span id="image3"></span>
+            <span id="image4"></span>
+
+            <div class="cadre image1" >
+                <a href="#image4" class="fleche precedente"></a>
+                <a href="#image2" class="fleche suivante"></a>
+            </div>
+
+            <div class="cadre image2" >
+                <a href="#image1" class="fleche precedente"></a>
+                <a href="#image3" class="fleche suivante"></a>
+            </div>
+
+            <div class="cadre image3" >
+                <a href="#image2" class="fleche precedente"></a>
+                <a href="#image4" class="fleche suivante"></a>
+            </div>
+
+            <div class="cadre image4" >
+                <a href="#image3" class="fleche precedente"></a>
+                <a href="#image1" class="fleche suivante"></a>
+            </div>
+
+        </div>
+
+            <p>La Nouvelle-Calédonie est un territoire français situé dans l'océan Pacifique, à environ 1 500 kilomètres
+                à l'est de l'Australie. Elle est composée de plusieurs îles, dont la Grande Terre, l'île des Pins et les
+                îles Loyauté : Lifou, Maré et Ouvéa. La Nouvelle-Calédonie est réputée pour ses paysages variés, allant
+                des plages de sable blanc aux montagnes verdoyantes en passant par les récifs coralliens et les terres
+                rouges du sud.</p>
+
+
+        </section>
+
+        <hr class="fil">
+
+        <h2>La culture et la gastronomie</h2>
+
+        <section class="culture">
+
+            <div class="carrousel2">
+
+            <span id="image5"></span>
+            <span id="image6"></span>
+            <span id="image7"></span>
+            <span id="image8"></span>
+
+            <div class="cadre image5" >
+                <a href="#image8" class="fleche precedente"></a>
+                <a href="#image6" class="fleche suivante"></a>
+            </div>
+
+            <div class="cadre image6" >
+                <a href="#image5" class="fleche precedente"></a>
+                <a href="#image7" class="fleche suivante"></a>
+            </div>
+
+            <div class="cadre image7" >
+                <a href="#image6" class="fleche precedente"></a>
+                <a href="#image8" class="fleche suivante"></a>
+            </div>
+
+            <div class="cadre image8" >
+                <a href="#image7" class="fleche precedente"></a>
+                <a href="#image5" class="fleche suivante"></a>
+            </div>
+
+            <div class="cadre image4" >
+                <a href="#image8" class="fleche precedente"></a>
+                <a href="#image5" class="fleche suivante"></a>
+            </div>
+
+        </div>
+
+            <p>La culture de la Nouvelle-Calédonie est un mélange riche d'influences kanak, françaises et polynésiennes. La gastronomie locale met en avant des produits frais et des saveurs exotiques, avec des plats à base de poisson, de fruits de mer et de légumes tropicaux.</p>
+
+
+        </section>
+
+        <hr class="fil">
+
+        <h2>Les animaux</h2>
+
+        <section class="animaux">
+
+
+            <div class="carrousel3">
+                <span id="image9"></span>
+                <span id="image10"></span>
+                <span id="image11"></span>
+                <span id="image12"></span>
+
+                <div class="cadre3 image9" >
+                    <a href="#image12" class="fleche3 precedente"></a>
+                    <a href="#image10" class="fleche3 suivante"></a>
+                </div>
+
+                <div class="cadre3 image10" >
+                    <a href="#image9" class="fleche3 precedente"></a>
+                    <a href="#image11" class="fleche3 suivante"></a>
+                </div>
+
+                <div class="cadre3 image11" >
+                    <a href="#image10" class="fleche3 precedente"></a>
+                    <a href="#image12" class="fleche3 suivante"></a>
+                </div>
+
+                <div class="cadre3 image12" >
+                    <a href="#image11" class="fleche3 precedente"></a>
+                    <a href="#image9" class="fleche3 suivante"></a>
+                </div>
+            </div>
+
+            <p>Les animaux en Nouvelle-Calédonie sont variés et uniques. On y trouve des espèces endémiques, comme le cagou, un oiseau incapable de voler, ainsi que de nombreuses espèces marines dans les récifs coralliens.</p>
+
+
+        </section>
+
+        <hr class="fil">
+
+        <h2>Les évènements</h2>
+
+        <div id="video-slider" style="max-width:600px;margin:auto;text-align:center;">
+                <video id="slider-video" width="80%" controls>
+                    <source src="assets/video/claquettes.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la vidéo.
+                </video>
+                <br>
+                <button class="btn" onclick="prevVideo()">Précédent</button>
+                <button class="btn" onclick="nextVideo()">Suivant</button>
+            </div>
+
+            <script>
+            const videos = [
+                'assets/video/claquettes.mp4',
+                'assets/video/rodeo.mp4',
+                'assets/video/spectacle2.mp4',
+                'assets/video/spectacle3.mp4',
+                'assets/video/wallis.mp4'
+            ];
+            let current = 0;
+            function showVideo(index) {
+                const videoElement = document.getElementById('slider-video');
+                videoElement.querySelector('source').src = videos[index];
+                videoElement.load();
+            }
+            function prevVideo() {
+                current = (current - 1 + videos.length) % videos.length;
+                showVideo(current);
+            }
+            function nextVideo() {
+                current = (current + 1) % videos.length;
+                showVideo(current);
+            }
+            </script>
+
+            <p>Découvrez le lancé de claquettes et le rodéo de la foire de Bourail. Voyagez avec avec la culture polynesienne et les danse traditionnelles de Wallis et Futuna.</p>
+
+
+    </main>
+
+
+
+
+
+    </main>
+
+<footer class="footer">
+
+        <div class="reseaux">
+
+            <p>Retrouvez-nous sur les réseaux sociaux :</p>
+
+
+
+            <img src="assets/icones/facebook.png" alt="facebook">
+            <img src="assets/icones/Instagram.png" alt="instagram">
+            <img src="assets/icones/twitter.png" alt="twitter">
+
+            <div></div>
+
+        </div>
+
+        <div class="liens-footer">
+
+            <ul>
+
+                <li><a href="">Le Canada</a></li>
+                <li><a href="">L'Italie</a></li>
+                <li><a href="">La Tunisie</a></li>
+                <li><a href="">La Nouvelle-Calédonie</a></li>
+
+            </ul>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
