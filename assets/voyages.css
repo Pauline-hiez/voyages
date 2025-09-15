@@ -204,3 +204,115 @@ body {
     font-weight: bold;
 }
 
+
+@media (max-width: 1024px) {
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .liens-nav {
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .avion {
+    width: 400px; 
+  }
+
+  .drapeau img,
+  .drapeau>div {
+    width: 250px;
+  }
+
+  .drapeau1,
+  .drapeau2,
+  .drapeau3,
+  .drapeau4 {
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px;
+  }
+
+  .liens-footer {
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .header {
+    height: 150px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+  }
+
+  nav a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .liens-nav {
+    flex-direction: column;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .avion {
+    width: 250px;
+  }
+
+  .drapeau img,
+  .drapeau>div {
+    width: 180px;
+  }
+
+  .drapeau1,
+  .drapeau2,
+  .drapeau3,
+  .drapeau4 {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .fond {
+    background-size: cover;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .reseaux img {
+    width: 35px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px;
+  }
+
+  .liens-footer {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
