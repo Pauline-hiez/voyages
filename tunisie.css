@@ -1,0 +1,152 @@
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSuvv68w1ZaxdudTojJo0FLFSISsUrJEFUVgj3cqzuL1SP5Jj39z6_GMJfzhV_EXO8wjPsE_2FmF8Bdy8E_ZfqBQ5LM5VVmKl9We2oM1Q);
+    background-attachment: fixed;
+    background-size: cover;
+
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+    color: #042620;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+h2.titre-cadre {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    border-bottom: 3px solid #00a88f;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+header {
+    background: #00a88f;
+    padding: 0.8rem 0;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.btn-retour {
+    text-decoration: none;
+    background: white;
+    color: #00a88f;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.btn-retour:hover {
+    background: #e8f6f4;
+    transform: scale(1.05);
+}
+
+.drapeau {
+    width: 40px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+.presentation {
+    margin: 2rem 0;
+}
+
+.kerkennah-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.kerkennah-container .texte {
+    flex: 1 1 350px;
+}
+
+.kerkennah-container .images img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.avis {
+    font-weight: bold;
+    color: #d40225;
+    margin-bottom: 0.8rem;
+}
+
+.avis a {
+    color: #1d554d;
+    text-decoration: none;
+}
+
+.avis a:hover {
+    text-decoration: underline;
+}
+
+.colonne {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.colonne-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.colonne-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.8rem;
+}
+
+
+.folklor {
+    background: #f3f9f8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.folklor img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
